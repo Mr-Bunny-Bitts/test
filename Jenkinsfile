@@ -16,7 +16,7 @@ node {
         rtMaven.deployer releaseRepo: 'jenkins_maven-libs-release', snapshotRepo: 'jenkins_maven-libs-snapshot', server: server
         rtMaven.resolver releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot', server: server
         rtMaven.deployer.deployArtifacts = true // Disable artifacts deployment during Maven run
-        buildInfo.env.capture = true
+        
         buildInfo = Artifactory.newBuildInfo()
     }
  
